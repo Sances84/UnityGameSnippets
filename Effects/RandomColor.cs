@@ -7,7 +7,7 @@ public class RandomColor : MonoBehaviour
 {
     public int seed = 0;
     public string keyword = "_Color";
-    // Start is called before the first frame update
+
     void Start()
     {
         UnityEngine.Random.State oldState = UnityEngine.Random.state;
@@ -17,11 +17,5 @@ public class RandomColor : MonoBehaviour
         Material mat = this.GetComponent<MeshRenderer>().material;
         mat.SetColor(this.keyword, rng);
         UnityEngine.Random.state = oldState;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
