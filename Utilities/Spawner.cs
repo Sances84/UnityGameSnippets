@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
             System.Array.Resize(ref clones, count);
 
         spawnTotal = clones.Length;
-        if (spawnTotal < limit + 1)
+        if (spawnTotal < limit)
         {
             spawnProg += Time.deltaTime;
             if (spawnProg >= spawnSig)
