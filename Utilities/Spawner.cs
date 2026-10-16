@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     public int limit = 10;
     public bool randomSpawn = false;
     public bool randomRot = false;
+    public bool spawnOnParent = true;
 
     void Update()
     {
@@ -56,6 +57,7 @@ public class Spawner : MonoBehaviour
 
         Vector3 spawnPosition = transform.position + offset + randomOffset;
         GameObject obj = Instantiate(fab, spawnPosition, randomRotOffset);
+        if (spawnOnParent) obj.transform.parent = this.transform;
 
         System.Array.Resize(ref clones, clones.Length + 1);
         clones[clones.Length - 1] = obj;
