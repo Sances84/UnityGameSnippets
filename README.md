@@ -6,7 +6,8 @@ Are you wanna to add the script in this repository? Make a pull request please, 
 Did you liked it? ⭐ Do not forget to star this repository! ⭐<br><br>
 # Repository Tree
 **Effects** folder contains:<br>
- 1. **RandomColor.cs** - random color for material by seed and keyword on the shader. **Requires MeshRenderer to use it**.<br><a/>
+ 1. **RandomColor.cs** - random color for material by seed and keyword on the shader. **Requires MeshRenderer to use it**.<br>
+ 2. **SimpleBillboard.cs** - Effect, which make object turn to the main camera object.<br><a/>
 
 **Utilities** folder contains:<br>
  1. **Spawner.cs** - the spawner script.<br>
