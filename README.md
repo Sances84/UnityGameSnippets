@@ -11,6 +11,7 @@ Did you liked it? ⭐ Do not forget to star this repository! ⭐<br><br>
 
 **Utilities** folder contains:<br>
  1. **Spawner.cs** - the spawner script.<br>
- 2. **ResetCoordsWhenFarAway.cs** - If target is set and exced range, the rotation and position would be reset repeatedly.<a/><br><br>
+ 2. **ResetCoordsWhenFarAway.cs** - If target is set and exced range, the rotation and position would be reset repeatedly.<br>
+ 3. **ProceduralLookAt.cs** - If target is set and not exced range, the object turns to the target.<a/><br><br>
 
 More scripts are will be coming soon with yours uploaded using your own pull requests!
