@@ -11,4 +11,4 @@ Are you wanna to add the script in this repository? Make a pull request please, 
  1. **Spawner.cs** - the spawner script.<br>
  2. **ResetCoordsWhenFarAway.cs** - If target is setted and if is far by range, the rotation and position would be reset repeatedly.<a/><br><br>
 
-More scripts comming soon!
+More scripts coming soon!
