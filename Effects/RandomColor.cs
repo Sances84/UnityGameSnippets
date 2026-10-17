@@ -4,16 +4,23 @@ using UnityEngine;
 public class RandomColor : MonoBehaviour
 {
     public int seed = 0;
+    public bool byTheSeed = true;
     public string keyword = "_Color";
 
     void Start()
     {
         Random.State oldState = Random.state;
-        Random.InitState(this.seed);
+        if (byTheSeed)
+        {
+            Random.InitState(this.seed);
+        }
         Color rng = Random.ColorHSV();
         rng.a = 1.0f;
         Material mat = this.GetComponent<MeshRenderer>().material;
         mat.SetColor(this.keyword, rng);
-        Random.state = oldState;
+        if (byTheSeed)
+        {
+            Random.state = oldState;
+        }
     }
 }
